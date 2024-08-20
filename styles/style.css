@@ -1,0 +1,56 @@
+.root {
+    --color-primario:;
+    --color-secundario:;
+    --color-terciario:;
+
+    --fuente-texto-in:;
+    --fuente-tedxto-out:;
+
+}
+
+body{
+    background-color: #F3F5FC ;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+section{
+    display: flex;
+
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+}
+
+.main__texto__out{
+    background-color: white;
+    border-radius: 16px;
+}
+
+.botones__grupo{
+    display: flex;
+    gap: 1%;
+    padding: 3%;
+    text-align: center;
+    
+}
+
+.boton__desencriptador{
+    width: 200px;
+    color: #F3F5FC;
+    border-radius: 5px;
+    background-color: blue;
+    text-decoration: none;
+}
+.boton__encriptador{
+    width: 200px;
+    background-color: blue;
+    color: #F3F5FC;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
