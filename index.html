@@ -15,24 +15,28 @@
     <main>
         <h1 class=""></h1>
         <section>
-            <textarea name="text" cols="60" rows="20">
+                <div>
+                <textarea id="valorUsuario" name="text" cols="60" rows="20">
                 ingrese texto aqui:</textarea>
-                
+                <h2><img src="assets/Group.png" alt="logo de alerta">Solo letras minúsculas y sin acentos</h2>
+                </div>
 
-            <div class="botones__grupo">
-                <a class="boton__encriptador" href="">Encriptar</a>
-                <a class="boton__desencriptador" href="">Desencriptar</a>
-            </div> 
+                <div class="botones__grupo">
+                    <button onclick="mostrarTexto();" class="boton__encriptador">Encriptador</button>
+                    <button onclick="mostrarVariables();" class="boton__desencriptador" >Desencriptar</button>
+                </div> 
         </section>
         <div class="main__texto__out">
             <img src="assets/Muñeco.png" alt="caricatura con una lupa">
             <h2>ningún mensaje fue econtrado</h2>
             <p>ingrese el texto que desees encriptar o desencriptar</p></div>
-        </div>    
+        </div>  
+        <script src="app.js"></script>  
     </main>
 
     <footer>
-        <div>ESTE TRABAJO HA SIDO REALIZADO POR RAYO</div>
+        <h3>ESTE TRABAJO HA SIDO REALIZADO POR RAYO</h3>
+    
 
     </footer>
 </body>

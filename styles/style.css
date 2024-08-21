@@ -1,10 +1,11 @@
-.root {
-    --color-primario:;
-    --color-secundario:;
-    --color-terciario:;
+:root {
+    --color-primario:#F3F5FC;
+    --color-secundario:#0A3871;
+    --color-hover:#D8DFE8;
+    /*--color-terciario:;
 
     --fuente-texto-in:;
-    --fuente-tedxto-out:;
+    --fuente-tedxto-out:;*/
 
 }
 
@@ -41,16 +42,32 @@ section{
 
 .boton__desencriptador{
     width: 200px;
-    color: #F3F5FC;
+    color: var(--color-primario);
     border-radius: 5px;
-    background-color: blue;
+    background-color: var(--color-secundario);
     text-decoration: none;
 }
 .boton__encriptador{
     width: 200px;
-    background-color: blue;
-    color: #F3F5FC;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
     border-radius: 5px;
     text-decoration: none;
+    
+}
+.boton__encriptador:hover{
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
 
+}
+
+.boton__desencriptador:hover{
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+
+}
+
+
+footer{
+    background-color: var(--color-primario);
 }
