@@ -10,7 +10,7 @@
 }
 
 body{
-    background-color: #F3F5FC ;
+    background-color: var(--color-primario) ;
 }
 main {
     display: flex;
