@@ -17,8 +17,9 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
+        
 }
+
 section{
     display: flex;
 
@@ -30,7 +31,22 @@ section{
 .main__texto__out{
     background-color: white;
     border-radius: 16px;
+    width: 35%;
+    min-height: 700px;
 }
+
+textarea{
+    border: none;          /* Elimina el borde */
+    outline: none;         /* Elimina el borde del enfoque */
+    background: none;      /* Elimina el fondo */
+    resize: none;          /* Desactiva la opción de redimensionar */
+    padding: 0;            /* Elimina el relleno */
+    margin: 0;             /* Elimina el margen */
+    width: 100%;           /* Ajusta el ancho al 100% del contenedor */
+    height: 100%;          /* Ajusta la altura al 100% del contenedor */
+    
+}
+
 
 .botones__grupo{
     display: flex;
