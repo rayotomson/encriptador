@@ -1,74 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+
 :root {
     --color-primario:#F3F5FC;
     --color-secundario:#0A3871;
     --color-hover:#D8DFE8;
-    /*--color-terciario:;
+    /*--color-terciario:;*/
 
-    --fuente-texto-in:;
-    --fuente-tedxto-out:;*/
+    --fuente-texto-in:"Inter", sans-serif;
+    /*--fuente-tedxto-out:;*/
 
 }
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 
 body{
     background-color: var(--color-primario) ;
+    box-sizing: border-box;
+    
+    width: 95%;
+    height: 95%;
 }
 main {
-    display: flex;
+    width: 100%;
+        display: flex;
+    padding: 40px 40px 0px 40px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
         
 }
 
+
 section{
     display: flex;
-
+    /*font-family: var(--fuente-texto-in);*/
     align-items: center;
-    width: 70%;
+    width: 30%;
     flex-direction: column;
 }
 
+h2{
+    font-family: var(--fuente-texto-in);
+    font-weight: 400;
+    color: #495057;
+    font-size: 12px;
+    padding-left: 24px;
+}
+
 .main__texto__out{
-    background-color: white;
-    border-radius: 16px;
-    width: 35%;
-    min-height: 700px;
+    background-color:#ffffff;
+    border-radius: 32px;
+    width: 400px;
+    min-height: 800px;
+    padding: 0px;
+    margin: 0px;
 }
 
 textarea{
+    height: auto;
+    font-family: var(--fuente-texto-in);
+    font-size: 32px ;
+    color: var(--color-secundario);
     border: none;          /* Elimina el borde */
     outline: none;         /* Elimina el borde del enfoque */
     background: none;      /* Elimina el fondo */
     resize: none;          /* Desactiva la opción de redimensionar */
-    padding: 0;            /* Elimina el relleno */
-    margin: 0;             /* Elimina el margen */
-    width: 100%;           /* Ajusta el ancho al 100% del contenedor */
-    height: 100%;          /* Ajusta la altura al 100% del contenedor */
-    
+    /*padding: 0;            /* Elimina el relleno */
+    /*width: 100%;           /* Ajusta el ancho al 100% del contenedor */
+    /*height: 100%;          /* Ajusta la altura al 100% del contenedor */
+    /*padding-top: 128px;*/
+    /*padding-left: 200px;*/
+    text-align: left;
 }
-
-
+/*.contenedor__botones__grupo{
+    padding: 24px;
+}*/
 .botones__grupo{
     display: flex;
-    gap: 1%;
-    padding: 3%;
+    gap: 24px;
+    padding: 24px;
     text-align: center;
-    
+        
 }
 
 .boton__desencriptador{
-    width: 200px;
+    width: 328px;
+    height: 60px;
     color: var(--color-primario);
-    border-radius: 5px;
+    border-radius: 24px;
     background-color: var(--color-secundario);
     text-decoration: none;
+    font-family: var(--fuente-texto-in);
+    font-weight: 400;
+    font-size: 16px;
 }
 .boton__encriptador{
-    width: 200px;
+    width: 328px;
+    height: 60px;
     background-color: var(--color-secundario);
     color: var(--color-primario);
-    border-radius: 5px;
+    border-radius: 24px;
     text-decoration: none;
+    font-family: var(--fuente-texto-in);
+    font-weight: 400;
+    font-size: 16px;
     
 }
 .boton__encriptador:hover{
@@ -82,8 +131,25 @@ textarea{
     color: var(--color-secundario);
 
 }
+.mensaja__derecha{
+    text-align: center;
+    font-family: var(--fuente-texto-in);
+    font-weight: 700;
+    font-size: 24px;
+
+}
+.instruccion__mensajederecha{
+    text-align: center;
+    font-family: var(--fuente-texto-in);
+    font-weight: 400;
+    font-size: 16px;
+    color: #495057;
+
+}
 
 
 footer{
+    text-align: center;
+    font-family: var(--fuente-texto-in);
     background-color: var(--color-primario);
 }

@@ -1,11 +1,13 @@
 let textarea = "";
 let textoIn = "";
+let textoVoid= "";
 
 function encriptar(){
 textoIn = document.getElementById('valorUsuario').value;
 console.log(textoIn);
 textoIn =encriptarTexto(textoIn);
 document.getElementById("imagen").style.display = "none";
+document.getElementById("mensaje").style.display = "none";
 asignarTextoElemento('p', textoIn);
 
 }
@@ -15,12 +17,14 @@ function desencriptar(){
     console.log(textoIn);
     textoIn =desencriptarTexto(textoIn);
     document.getElementById("imagen").style.display = "none";
+    document.getElementById("mensaje").style.display = "none";
     asignarTextoElemento('p', textoIn);    
 }
 
-function myFunction() {
+/*function myFunction() {
     document.getElementById("imagen").style.display = "none";
-  }
+    
+  }*/
 
   function asignarTextoElemento(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);

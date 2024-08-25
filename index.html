@@ -7,35 +7,40 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header>
+    <!--<header>
         <img src="assets/Logo.png" alt="logo alura">
 
-    </header>
+    </header> -->
 
     <main>
-        <h1 class=""></h1>
+        <h1 class=""> </h1>
         <section>
                 <div>
+                <img class="logo__alura" src="assets/Logo.png" alt="logo alura">    
                 <textarea id="valorUsuario" name="text" cols="60" rows="20">
-                ingrese texto aqui:</textarea>
-                <h2><img src="assets/Group.png" alt="logo de alerta" >Solo letras minúsculas y sin acentos</h2>
+                Ingrese texto aqui:</textarea>
                 </div>
 
-                <div class="botones__grupo">
-                    <button onclick="encriptar();" class="boton__encriptador">Encriptador</button>
-                    <button onclick="desencriptar();" class="boton__desencriptador" >Desencriptar</button>
+                <div class="contenedor__botones__grupo">
+                    <h2><img src="assets/Group.png" alt="logo de alerta" >Solo letras minúsculas y sin acentos</h2>
+                        <div class="botones__grupo">
+                            <button onclick="encriptar();" class="boton__encriptador">Encriptador</button>
+                            <button onclick="desencriptar();" class="boton__desencriptador" >Desencriptar</button>
+                        </div>
                 </div> 
         </section>
-        <div class="main__texto__out">
-            <img src="assets/Muñeco.png" alt="caricatura con una lupa" id="imagen">
-            <h2 class="mensaja__derecha"></h2>
-            <p>ingrese el texto que desees encriptar o desencriptar</p></div>
+        <div id="ocultar" class="main__texto__out">
+                <img src="assets/Muñeco.png" alt="caricatura con una lupa" id="imagen">
+                <h2 id="mensaje" class="mensaja__derecha">Ningún mensaje fue encontrado</h2>
+                <p class="instruccion__mensajederecha">Ingresa el texto que desees encriptar o desencriptar.</p>
+
+                
         </div>  
         <script src="app.js"></script>  
     </main>
 
     <footer>
-        <h3>ESTE TRABAJO HA SIDO REALIZADO POR RAYO</h3>
+        <h3>Este trabajo ha sido realizado por Tomas Trebino</h3>
     
 
     </footer>
