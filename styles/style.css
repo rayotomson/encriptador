@@ -153,3 +153,45 @@ footer{
     font-family: var(--fuente-texto-in);
     background-color: var(--color-primario);
 }
+
+
+@media (min-width: 376px) and (max-width: 1024px){
+    main {
+        width: 100%;
+            display: flex;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+            
+    }
+}
+@media (max-width: 375px){
+    main {
+        width: 45vh;
+        display: flex;
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+            
+    }
+    .botones__grupo{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 24px;
+        text-align: center;
+    }
+    textarea{
+        font-family: var(--fuente-texto-in);
+        font-size: 16px ;
+        color: var(--color-secundario);
+        border: none;          /* Elimina el borde */
+        outline: none;         /* Elimina el borde del enfoque */
+        background: none;      /* Elimina el fondo */
+        resize: none;          /* Desactiva la opción de redimensionar */
+      
+        text-align: left;
+    }
+}
